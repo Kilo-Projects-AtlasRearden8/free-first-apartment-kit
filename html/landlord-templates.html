@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landlord Communication Templates — Asdale Dynamics, LLC</title>
+<link rel="stylesheet" href="../css/kit.css">
+</head>
+<body>
+
+<header>
+  <h1 class="title">Landlord Communication Templates</h1>
+  <p class="subtitle">Plain-English messages you can copy, fill in, and send to your landlord or property manager.</p>
+  <div class="credit">Freebie from <strong>Asdale Dynamics, LLC</strong> &mdash; no account, no signup, nothing leaves your computer.</div>
+</header>
+
+<main>
+
+<section class="card">
+  <h2>&#128187; How to use</h2>
+  <p>Fill in the blanks for any template, copy the text, and paste it into an email, text message, or letter. Keep a copy of everything you send (and any reply) &mdash; screenshots or a dedicated folder work fine. These are templates, not legal advice.</p>
+</section>
+
+<section class="card">
+  <h2>&#128187; Maintenance request</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="m-name"></div>
+    <div class="field full"><label>Unit address</label><input type="text" id="m-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="m-date"></div>
+    <div class="field full"><label>What needs fixing</label><textarea id="m-problem" rows="2" placeholder="e.g. Kitchen faucet leaks under the sink"></textarea></div>
+    <div class="field full"><label>When it started / how urgent</label><input type="text" id="m-urgency" placeholder="e.g. Started today, dripping constantly"></div>
+    <div class="field full"><label>Best way to reach you</label><input type="text" id="m-contact" placeholder="Phone or email"></div>
+  </div>
+  <p class="small">When to use: anything broken, leaking, or unsafe &mdash; appliances, plumbing, heat, electricity, locks, pests.</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="m-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('m')">Build message</button>
+    <button type="button" onclick="copy('m-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>&#128187; Rent payment question</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="r-name"></div>
+    <div class="field full"><label>Unit address</label><input type="text" id="r-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="r-date"></div>
+    <div class="field full"><label>Month in question</label><input type="month" id="r-month"></div>
+    <div class="field full"><label>Your question (late fee, payment method, confirmation)</label><textarea id="r-question" rows="2" placeholder="e.g. I paid rent on the 1st via portal. Can you confirm it was received?"></textarea></div>
+  </div>
+  <p class="small">When to use: confirming rent was received, asking about late fees, or requesting a receipt.</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="r-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('r')">Build message</button>
+    <button type="button" onclick="copy('r-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>&#128187; Security deposit return request</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="d-name"></div>
+    <div class="field full"><label>Unit address (you moved out of)</label><input type="text" id="d-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="d-date"></div>
+    <div class="field"><label>Move-out date</label><input type="date" id="d-moved"></div>
+    <div class="field full"><label>Forwarding address for deposit check</label><input type="text" id="d-address"></div>
+    <div class="field full"><label>Deposit amount paid</label><input type="text" id="d-amount" placeholder="e.g. $1,000"></div>
+  </div>
+  <p class="small">When to use: after move-out, to request your security deposit back within your state's deadline.</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="d-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('d')">Build message</button>
+    <button type="button" onclick="copy('d-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>&#128187; Notice to vacate / lease non-renewal</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="n-name"></div>
+    <div class="field full"><label>Unit address</label><input type="text" id="n-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="n-date"></div>
+    <div class="field"><label>Last day of tenancy</label><input type="date" id="n-last"></div>
+    <div class="field full"><label>Forwarding address</label><input type="text" id="n-address"></div>
+  </div>
+  <p class="small">When to use: telling your landlord you're leaving at the end of your lease. Check your lease for required notice (often 30 or 60 days).</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="n-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('n')">Build message</button>
+    <button type="button" onclick="copy('n-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>&#128187; Lock / key request</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="k-name"></div>
+    <div class="field full"><label>Unit address</label><input type="text" id="k-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="k-date"></div>
+    <div class="field full"><label>What you need</label><input type="text" id="k-need" placeholder="e.g. Replacement mailbox key, extra apartment key"></div>
+    <div class="field full"><label>Why</label><input type="text" id="k-why" placeholder="e.g. Lost my only key"></div>
+  </div>
+  <p class="small">When to use: lost keys, broken locks, or requesting an extra key.</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="k-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('k')">Build message</button>
+    <button type="button" onclick="copy('k-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>&#128187; Noise / neighbor issue</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="q-name"></div>
+    <div class="field full"><label>Unit address</label><input type="text" id="q-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="q-date"></div>
+    <div class="field full"><label>What happened (when, where, what)</label><textarea id="q-issue" rows="2" placeholder="e.g. Loud music from unit 3B, nightly after 11 p.m. for the past week"></textarea></div>
+    <div class="field full"><label>What you'd like</label><input type="text" id="q-want" placeholder="e.g. A reminder about quiet hours"></div>
+  </div>
+  <p class="small">When to use: recurring noise, smoking in shared areas, or other neighbor issues you want the landlord to address.</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="q-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('q')">Build message</button>
+    <button type="button" onclick="copy('q-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>&#128187; Move-out inspection request</h2>
+  <div class="form-grid">
+    <div class="field full"><label>Your name</label><input type="text" id="v-name"></div>
+    <div class="field full"><label>Unit address</label><input type="text" id="v-unit"></div>
+    <div class="field"><label>Date</label><input type="date" id="v-date"></div>
+    <div class="field"><label>Move-out date</label><input type="date" id="v-moved"></div>
+    <div class="field full"><label>Preferred inspection time</label><input type="text" id="v-time" placeholder="e.g. Tuesday at 2 p.m."></div>
+  </div>
+  <p class="small">When to use: scheduling a walk-through before you move out so you can fix anything and protect your deposit.</p>
+  <div style="margin-top:10px; padding:12px; background:var(--row-zebra); border-radius:6px; border:1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13px; white-space:pre-wrap;" id="v-out"></div>
+  <div class="actions" style="margin-top:10px;">
+    <button type="button" onclick="build('v')">Build message</button>
+    <button type="button" onclick="copy('v-out')">Copy</button>
+    <button type="reset">Clear</button>
+  </div>
+</section>
+
+<div class="actions">
+  <button class="primary" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+</main>
+
+<script>
+(function () {
+  function esc(t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function build(prefix) {
+    var g = function (id) { return document.getElementById(id); };
+    var out = document.getElementById(prefix + '-out');
+    var text;
+    if (prefix === 'm') {
+      text = 'Subject: Maintenance request - ' + esc(g('m-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('m-name').value) + ' and I live at ' + esc(g('m-unit').value) + '.\n\n' +
+        'I am writing to request a repair:\n\n' +
+        '- Issue: ' + esc(g('m-problem').value) + '\n' +
+        '- Started / urgency: ' + esc(g('m-urgency').value) + '\n' +
+        '- Best way to reach me: ' + esc(g('m-contact').value) + '\n\n' +
+        'Please let me know when someone can come by. Thank you.\n\n' +
+        'Sincerely,\n' + esc(g('m-name').value) + '\n' + esc(g('m-unit').value) + '\n' + esc(g('m-date').value);
+    } else if (prefix === 'r') {
+      text = 'Subject: Rent question - ' + esc(g('r-month').value) + ' - ' + esc(g('r-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('r-name').value) + ' and I live at ' + esc(g('r-unit').value) + '.\n\n' +
+        'Regarding rent for ' + esc(g('r-month').value) + ':\n\n' +
+        esc(g('r-question').value) + '\n\n' +
+        'Thank you,\n' + esc(g('r-name').value) + '\n' + esc(g('r-date').value);
+    } else if (prefix === 'd') {
+      text = 'Subject: Security deposit return request - ' + esc(g('d-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('d-name').value) + '. I moved out of ' + esc(g('d-unit').value) + ' on ' + esc(g('d-moved').value) + '.\n\n' +
+        'I paid a security deposit of ' + esc(g('d-amount').value) + '. Please return it to my forwarding address:\n\n' +
+        esc(g('d-address').value) + '\n\n' +
+        'Thank you,\n' + esc(g('d-name').value) + '\n' + esc(g('d-date').value);
+    } else if (prefix === 'n') {
+      text = 'Subject: Notice to vacate - ' + esc(g('n-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('n-name').value) + ' and I live at ' + esc(g('n-unit').value) + '.\n\n' +
+        'Please accept this as my written notice that I will be moving out on ' + esc(g('n-last').value) + '.\n\n' +
+        'Please send my security deposit to my forwarding address:\n\n' +
+        esc(g('n-address').value) + '\n\n' +
+        'Thank you,\n' + esc(g('n-name').value) + '\n' + esc(g('n-date').value);
+    } else if (prefix === 'k') {
+      text = 'Subject: Lock / key request - ' + esc(g('k-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('k-name').value) + ' and I live at ' + esc(g('k-unit').value) + '.\n\n' +
+        'I am requesting: ' + esc(g('k-need').value) + '\n' +
+        'Reason: ' + esc(g('k-why').value) + '\n\n' +
+        'Please let me know the cost and how to pick it up.\n\n' +
+        'Thank you,\n' + esc(g('k-name').value) + '\n' + esc(g('k-date').value);
+    } else if (prefix === 'q') {
+      text = 'Subject: Noise / neighbor issue - ' + esc(g('q-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('q-name').value) + ' and I live at ' + esc(g('q-unit').value) + '.\n\n' +
+        'I am writing about the following issue:\n\n' +
+        esc(g('q-issue').value) + '\n\n' +
+        'I would appreciate: ' + esc(g('q-want').value) + '\n\n' +
+        'Thank you,\n' + esc(g('q-name').value) + '\n' + esc(g('q-date').value);
+    } else if (prefix === 'v') {
+      text = 'Subject: Move-out inspection request - ' + esc(g('v-unit').value) + '\n\n' +
+        'Dear Landlord or Property Manager,\n\n' +
+        'My name is ' + esc(g('v-name').value) + ' and I live at ' + esc(g('v-unit').value) + '.\n\n' +
+        'I will be moving out on ' + esc(g('v-moved').value) + '. Please schedule a move-out inspection.\n\n' +
+        'My preferred time: ' + esc(g('v-time').value) + '\n\n' +
+        'Thank you,\n' + esc(g('v-name').value) + '\n' + esc(g('v-date').value);
+    }
+    out.textContent = text;
+  }
+  function copy(id) {
+    var el = document.getElementById(id);
+    el.select();
+    el.setSelectionRange(0, 99999);
+    try {
+      document.execCommand('copy');
+      alert('Copied to clipboard.');
+    } catch (e) {
+      navigator.clipboard.writeText(el.value);
+    }
+  }
+  window.build = build;
+  window.copy = copy;
+})();
+</script>
+
+</body>
+</html>
