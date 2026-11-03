@@ -112,26 +112,13 @@
   function fmt(v) {
     return '$' + Math.max(0, Math.round(v * 100) / 100).toFixed(2);
   }
-  function sum(group) {
-    let total = 0;
-    document.querySelectorAll('input[data-group="' + group + '"]').forEach(function (el) {
-      total += parseFloat(el.value) || 0;
-    });
-    return total;
-  }
   function refresh() {
-    var est = sum('bedroom') + sum('living') + sum('dining') + sum('bath');
+    var est = 0;
     var act = 0;
-    document.querySelectorAll('input[data-group]').forEach(function (el) {
-      // actual cost inputs are second numeric input per row; group attribute is on both, so count all as actual would double count.
-    });
-    // Simpler: actual inputs are the 4th cell input. Re-query specifically.
-    document.querySelectorAll('table tbody tr input[data-group]').forEach(function (el) {
-      // each row has est then actual; both carry the group. We only want actual once per row.
-    });
-    // Walk rows to pick actual (2nd numeric input per row)
+    // Each row: inputs[0] = estimated cost, inputs[1] = actual cost.
     document.querySelectorAll('table tbody tr').forEach(function (row) {
       var inputs = row.querySelectorAll('input[data-group]');
+      if (inputs[0]) est += parseFloat(inputs[0].value) || 0;
       if (inputs[1]) act += parseFloat(inputs[1].value) || 0;
     });
     document.getElementById('total-est').textContent = fmt(est);

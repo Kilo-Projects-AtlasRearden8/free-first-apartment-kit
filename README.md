@@ -1,18 +1,23 @@
 # First Apartment Freebies Kit
 
 Fillable, printable paperwork for your first apartment — no account, no
-signup, no tracking. Just open the HTML files in any browser, fill them in,
-and print or save as PDF.
+signup, no tracking, nothing sold to you. Just open the HTML files in any
+browser, fill them in, and print or save as PDF.
+
+Written plain, step by step, never condescending — the way Asdale Dynamics,
+LLC explains everything. Built for anyone moving into their first place, with
+an eye toward low-energy, ADHD-friendly use: short sections, checkboxes, and
+auto-calculating totals so you don't have to do the math in your head.
 
 ## What's inside
 
 | Document | File | What it does |
 |---|---|---|
-| Budget worksheet | `html/budget-worksheet.html` | Monthly income vs. expenses, move-in costs, auto totals |
-| Supplies checklist | `html/supplies-checklist.html` | Room-by-room shopping list with checkboxes |
-| Furniture list | `html/furniture-list.html` | Must-have vs. nice-to-have with cost tracking |
-| Move-in inspection | `html/move-in-inspection.html` | Room-by-room condition report with sign-off lines |
-| Landlord templates | `html/landlord-templates.html` | Maintenance requests, deposit return, notices, and more |
+| Budget worksheet | `html/budget-worksheet.html` | Monthly income vs. expenses, one-time move-in costs, auto totals, money left over |
+| Supplies checklist | `html/supplies-checklist.html` | Room-by-room shopping list with checkboxes (cleaning, kitchen, bath, bedroom, living, safety) |
+| Furniture list | `html/furniture-list.html` | Must-have vs. nice-to-have, room by room, est. vs. actual cost, totals |
+| Move-in inspection | `html/move-in-inspection.html` | Room-by-room condition report (good / needs repair / damaged), photo log, sign-off lines |
+| Landlord templates | `html/landlord-templates.html` | Plain-English messages: maintenance, rent question, deposit return, notice to vacate, lock/key, noise, move-out inspection |
 
 Markdown sources for each document live in `kit/` if you want to edit or
 repurpose them.
@@ -22,11 +27,11 @@ repurpose them.
 1. Download or clone this folder.
 2. Open any `html/*.html` file in your browser (Chrome, Firefox, Safari, Edge).
 3. Fill in the fields on screen, or print blank and write by hand.
-4. Press `Ctrl+P` / `Cmd+P` to print, or choose "Save as PDF." Print-only
-   styles hide buttons and inputs so the paper copy is clean.
+4. Press `Ctrl+P` / `Cmd+P` to print, or choose "Save as PDF." Print styles
+   hide buttons and inputs so the paper copy is clean.
 
-No internet connection, account, or personal data is required. Nothing you
-type leaves your computer.
+No internet connection, account, signup, or personal data is required.
+Nothing you type leaves your computer.
 
 ## About
 

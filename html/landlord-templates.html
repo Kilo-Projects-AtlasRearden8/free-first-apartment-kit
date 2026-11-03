@@ -222,13 +222,18 @@
   }
   function copy(id) {
     var el = document.getElementById(id);
-    el.select();
-    el.setSelectionRange(0, 99999);
+    var text = el.textContent || '';
     try {
-      document.execCommand('copy');
+      navigator.clipboard.writeText(text);
       alert('Copied to clipboard.');
     } catch (e) {
-      navigator.clipboard.writeText(el.value);
+      // Fallback: select the div text so the user can copy manually.
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      alert('Text selected. Copy it (Ctrl+C / Cmd+C) and paste into your message.');
     }
   }
   window.build = build;

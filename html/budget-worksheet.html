@@ -136,7 +136,8 @@
 <script>
 (function () {
   function fmt(v) {
-    return '$' + Math.max(0, Math.round(v * 100) / 100).toFixed(2);
+    var abs = Math.abs(Math.round(v * 100) / 100).toFixed(2);
+    return (v < 0 ? '-$' : '$') + abs;
   }
   function sum(group) {
     let total = 0;
